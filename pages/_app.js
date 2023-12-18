@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(false);
 
   const pageURL = process.env.baseURL + router.pathname;
-  const title = "Berani Jual Rugi - CMS";
+  const title = "Berani Jual Rugi - Admin";
   const description =
     "Dash is a fully responsive and yet modern premium Nextjs template & snippets. Geek is feature-rich Nextjs components and beautifully designed pages that help you create the best possible website and web application projects. Nextjs Snippet ";
   const keywords =

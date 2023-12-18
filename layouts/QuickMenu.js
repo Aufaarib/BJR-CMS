@@ -63,14 +63,14 @@ const QuickMenu = () => {
         bsPrefix="navbar-nav"
         className="navbar-right-wrap ms-auto d-flex nav-top-wrap"
       >
-        <Dropdown as="li" className="stopevent">
+        {/* <Dropdown as="li" className="stopevent">
           <Dropdown.Toggle
             as="a"
             bsPrefix=" "
             id="dropdownNotification"
             className="btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted"
           >
-            <i className="fe fe-bell"></i>
+            <i className="fa fa-bell"></i>
           </Dropdown.Toggle>
           <Dropdown.Menu
             className="dashboard-dropdown notifications-dropdown dropdown-menu-lg dropdown-menu-end py-0"
@@ -83,7 +83,7 @@ const QuickMenu = () => {
                 <span className="h4 mb-0">Notifications</span>
                 <Link href="/" className="text-muted">
                   <span className="align-middle">
-                    <i className="fe fe-settings me-1"></i>
+                    <i className="fa fa-settings me-1"></i>
                   </span>
                 </Link>
               </div>
@@ -98,7 +98,7 @@ const QuickMenu = () => {
               </div>
             </Dropdown.Item>
           </Dropdown.Menu>
-        </Dropdown>
+        </Dropdown> */}
         <Dropdown as="li" className="ms-2">
           <Dropdown.Toggle
             as="a"
@@ -122,7 +122,7 @@ const QuickMenu = () => {
           >
             <Dropdown.Item as="div" className="px-4 pb-0 pt-2" bsPrefix=" ">
               <div className="lh-1 ">
-                <h5 className="mb-1"> John E. Grainger</h5>
+                <h5 className="mb-1">{localStorage.getItem("USERNAME")}</h5>
                 <Link href="#" className="text-inherit fs-6">
                   View my profile
                 </Link>
@@ -130,24 +130,19 @@ const QuickMenu = () => {
               <div className=" dropdown-divider mt-3 mb-2"></div>
             </Dropdown.Item>
             <Dropdown.Item eventKey="2">
-              <i className="fe fe-user me-2"></i> Edit Profile
+              <i className="fa fa-user me-2"></i>Edit Profile
             </Dropdown.Item>
-            <Dropdown.Item eventKey="3">
-              <i className="fe fe-activity me-2"></i> Activity Log
+            {/* <Dropdown.Item eventKey="3">
+              <i className="fa fa-activity me-2"></i> Activity Log
             </Dropdown.Item>
             <Dropdown.Item className="text-primary">
-              <i className="fe fe-star me-2"></i> Go Pro
+              <i className="fa fa-star me-2"></i> Go Pro
             </Dropdown.Item>
             <Dropdown.Item>
-              <i className="fe fe-settings me-2"></i> Account Settings
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <button onClick={() => onSignOut()}>
-                <i className="fe fe-power me-2"></i>Sign Out
-              </button>
-              {/* <Link href="/authentication/sign-in">
-                <i className="fe fe-power me-2"></i>Sign Out
-              </Link> */}
+              <i className="fa fa-settings me-2"></i> Account Settings
+            </Dropdown.Item> */}
+            <Dropdown.Item onClick={() => onSignOut()}>
+              <i className="fa fa-power-off me-2"></i>Sign Out
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
@@ -169,7 +164,7 @@ const QuickMenu = () => {
             id="dropdownNotification"
             className="btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted"
           >
-            <i className="fe fe-bell"></i>
+            <i className="fa fa-bell"></i>
           </Dropdown.Toggle>
           <Dropdown.Menu
             className="dashboard-dropdown notifications-dropdown dropdown-menu-lg dropdown-menu-end py-0"
@@ -181,7 +176,7 @@ const QuickMenu = () => {
                 <span className="h4 mb-0">Notifications</span>
                 <Link href="/" className="text-muted">
                   <span className="align-middle">
-                    <i className="fe fe-settings me-1"></i>
+                    <i className="fa fa-settings me-1"></i>
                   </span>
                 </Link>
               </div>
@@ -227,23 +222,23 @@ const QuickMenu = () => {
               <div className=" dropdown-divider mt-3 mb-2"></div>
             </Dropdown.Item>
             <Dropdown.Item eventKey="2">
-              <i className="fe fe-user me-2"></i> Edit Profile
+              <i className="fa fa-user me-2"></i> Edit Profile
             </Dropdown.Item>
             <Dropdown.Item eventKey="3">
-              <i className="fe fe-activity me-2"></i> Activity Log
+              <i className="fa fa-activity me-2"></i> Activity Log
             </Dropdown.Item>
             <Dropdown.Item className="text-primary">
-              <i className="fe fe-star me-2"></i> Go Pro
+              <i className="fa fa-star me-2"></i> Go Pro
             </Dropdown.Item>
             <Dropdown.Item>
-              <i className="fe fe-settings me-2"></i> Account Settings
+              <i className="fa fa-settings me-2"></i> Account Settings
             </Dropdown.Item>
             <Dropdown.Item>
               <button onClick={() => onSignOut()}>
-                <i className="fe fe-power me-2"></i>Sign Out
+                <i className="fa fa-power me-2"></i>Sign Out
               </button>
               {/* <Link href="/authentication/sign-in">
-                <i className="fe fe-power me-2"></i>Sign Out
+                <i className="fa fa-power me-2"></i>Sign Out
               </Link> */}
             </Dropdown.Item>
           </Dropdown.Menu>

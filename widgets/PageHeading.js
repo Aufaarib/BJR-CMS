@@ -5,11 +5,11 @@ const PageHeading = (props) => {
   const { heading } = props;
   return (
     <Row>
-      <Breadcrumb>
+      {/* <Breadcrumb>
         <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Library</Breadcrumb.Item>
         <Breadcrumb.Item active>Data</Breadcrumb.Item>
-      </Breadcrumb>
+      </Breadcrumb> */}
       <Col lg={12} md={12} xs={12}>
         {/* Page header */}
         <div className="border-bottom pb-4 mb-4 ">

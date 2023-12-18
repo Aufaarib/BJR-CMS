@@ -102,16 +102,16 @@ const NavbarVertical = (props) => {
   return (
     <Fragment>
       <SimpleBar style={{ maxHeight: "100vh" }}>
-        <div className="d-flex items-center px-4 pt-4">
+        <div className="d-flex items-center px-4 py-5">
           <Link href="/">
-            <h3 className="text-light">Berani Jual Rugi Admin</h3>
+            <h3 className="text-light">Berani Jual Rugi</h3>
           </Link>
         </div>
         {/* Dashboard Menu */}
         <Accordion
           defaultActiveKey="0"
           as="ul"
-          className="navbar-nav flex-column"
+          className="navbar-nav flex-column gap-1"
         >
           {DashboardAdmin2Menu.map(function (menu, index) {
             if (menu.grouptitle) {
@@ -122,9 +122,11 @@ const NavbarVertical = (props) => {
                   className="d-flex flex-row align-items-center px-4"
                 >
                   {/* group title item */}
-                  <span className={`fa fa-${menu.icon}`}></span>
-                  <div className="px-2 py-4">{menu.title}</div>
-                  {/* end of group title item */}
+                  <div>
+                    <span className={`fa fa-${menu.icon}`}></span>
+                    <div className="px-2 py-4">{menu.title}</div>
+                    {/* end of group title item */}
+                  </div>
                 </Card>
               );
             } else {
@@ -319,7 +321,7 @@ const NavbarVertical = (props) => {
                       }`}
                     >
                       {typeof menu.icon === "string" ? (
-                        <i className={`nav-icon fe fe-${menu.icon} me-2`}></i>
+                        <i className={`nav-icon fa fa-${menu.icon} me-2`}></i>
                       ) : (
                         menu.icon
                       )}

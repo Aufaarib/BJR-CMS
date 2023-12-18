@@ -73,7 +73,7 @@ const DefaultDashboardLayout = (props) => {
               <p className="m-0">
                 Made by{" "}
                 <a href="https://codescandy.com/" target="_blank">
-                  Codescandy
+                  BJR
                 </a>
               </p>
             </Col>
@@ -81,7 +81,7 @@ const DefaultDashboardLayout = (props) => {
               <p className="m-0">
                 Destributed by{" "}
                 <a href="https://themewagon.com/" target="_blank">
-                  ThemeWagon
+                  BJR
                 </a>
               </p>
             </Col>
