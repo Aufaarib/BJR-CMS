@@ -1,24 +1,14 @@
 // import node module libraries
-import {
-  Row,
-  Col,
-  Card,
-  Form,
-  Button,
-  Image,
-  Spinner,
-  Alert,
-} from "react-bootstrap";
 import Link from "next/link";
+import { Button, Card, Col, Form, Image, Row, Spinner } from "react-bootstrap";
 
 // import authlayout to override default layout
-import AuthLayout from "layouts/AuthLayout";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import axios from "axios";
 import { useStateContext } from "contexts/ContextProvider";
 import Cookies from "js-cookie";
-import Alerts from "components/bootstrap/Alerts";
+import AuthLayout from "layouts/AuthLayout";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const SignIn = () => {
   const [emails, setEmail] = useState("");
